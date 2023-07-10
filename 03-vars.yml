@@ -18,7 +18,7 @@
 
 - name: Variables from files
   hosts: all
-  var-file:
+  vars-files:
     - exvars.yml
   tasks:
     - name: printing from file
