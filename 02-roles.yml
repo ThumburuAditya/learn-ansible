@@ -1,0 +1,4 @@
+- name : print hello world from roles
+  hosts : all
+  roles :
+    - sample
