@@ -1,6 +1,6 @@
--name : printing
-hosts : all
-tasks :
-  -name : printing helloworld
-  ansible.builtin.debug:
-    msg : Hello world
+- name : printing
+  hosts : all
+  tasks :
+    - name : printing helloworld
+      ansible.builtin.debug:
+      msg : Hello world
