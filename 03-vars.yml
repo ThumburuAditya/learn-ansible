@@ -1,17 +1,17 @@
 - name: Demo on play level variables
   hosts: all
   vars:
-    url = xyz.co.in
+    url: xyz.co.in
   tasks:
     - name: print the play level variable
       ansible.builtin.debug:
-        msg: var - {{url}}
+        msg: var - {{ url }}
 
 - name: Demo on task level variable
   hosts: all
   tasks:
     - name: print the task level variables
       ansible.builtin.debug:
-        msg: var - {{url}}
+        msg: var - {{ url }}
       vars:
         url: tasklevel@co.in
