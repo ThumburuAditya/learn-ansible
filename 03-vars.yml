@@ -16,9 +16,9 @@
       vars:
         url: tasklevel@co.in
 
-- name: Variables from files
+- name: load vars from file
   hosts: all
-  vars-files:
+  vars_files:
     - exvars.yml
   tasks:
     - name: printing from file
