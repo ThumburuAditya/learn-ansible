@@ -29,3 +29,7 @@
   hosts: all
   roles:
     -sample
+  tasks:
+    - name: print from roles
+      ansible.builtin.debug:
+        msg: '{{url}}'
