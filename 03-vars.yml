@@ -24,3 +24,8 @@
     - name: printing from file
       ansible.builtin.debug:
         msg: url - {{ url }}
+
+- name: load variable from roles
+  hosts: all
+  roles:
+    -sample
