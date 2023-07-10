@@ -25,3 +25,8 @@
       ansible.builtin.debug:
         msg: url - {{ url }}
 
+- name: register variables
+  hosts: all
+  tasks:
+    - name: uptime shell command
+      ansible.builtin.shell: uptime
